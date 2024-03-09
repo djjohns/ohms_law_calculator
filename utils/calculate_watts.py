@@ -1,4 +1,6 @@
-def calculate_watts(volts=None, amps=None, ohms=None):
+def calculate_watts(
+    volts: float = None, amps: float = None, ohms: float = None
+) -> float:
 
     if volts and ohms:
         watts = (volts**2) / ohms

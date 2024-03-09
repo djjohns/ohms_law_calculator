@@ -1,7 +1,9 @@
 import math
 
 
-def calculate_amps(volts=None, watts=None, ohms=None):
+def calculate_amps(
+    volts: float = None, watts: float = None, ohms: float = None
+) -> float:
 
     if volts and ohms:
         amps = volts / ohms

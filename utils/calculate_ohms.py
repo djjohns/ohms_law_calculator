@@ -1,4 +1,6 @@
-def calculate_ohms(watts=None, volts=None, amps=None):
+def calculate_ohms(
+    watts: float = None, volts: float = None, amps: float = None
+) -> float:
 
     if volts and amps:
         resistance = volts / amps
